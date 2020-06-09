@@ -11,6 +11,7 @@ let dirY = -1;
 let win = false;
 let xTimeout = false;
 let yTimeout = false;
+let lastHit;
 
 function setup() {
     //hide congratulations message at start
@@ -36,7 +37,8 @@ function update() {
     }
 
     //Check if the logo has hit a wall
-    if (!xTimeout && oobX(posX)) {
+    if (lastHit != 'side' && !xTimeout && oobX(posX)) {
+        lastHit = 'side';
         xTimeout = true;
         setTimeout(() => {
             xTimeout = false;
@@ -45,7 +47,8 @@ function update() {
         dirX *= -1;
         //change to random hue
         logo.style.filter = `hue-rotate(${Math.floor(Math.random() * 360)}deg)`;
-    } else if (!yTimeout && oobY(posY)) {
+    } else if (lastHit != 'top' && !yTimeout && oobY(posY)) {
+        lastHit = 'top';
         yTimeout = true;
         setTimeout(() => {
             yTimeout = false;
