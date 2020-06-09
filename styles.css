@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    overflow: hidden;
+}
+
+#logo {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    min-width: 100px;
+    width: 20vw;
+    height: auto;
+}
+
+#nice {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 50px;
+    text-shadow: black 3px 3px;
+}
+
+#fade {
+    opacity: 1;
+}
