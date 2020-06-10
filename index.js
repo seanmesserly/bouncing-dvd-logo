@@ -14,6 +14,9 @@ let yTimeout = false;
 let lastHit;
 
 function setup() {
+    //only show logo once script loads
+    logo.style.display = '';
+
     //hide congratulations message at start
     nice.style.display = 'none';
     //Start image in center of screen
