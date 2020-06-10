@@ -45,7 +45,8 @@ function update() {
         xTimeout = true;
         setTimeout(() => {
             xTimeout = false;
-        }, 250);
+            lastHit = '';
+        }, 750);
         //flip x movement direction
         dirX *= -1;
         //change to random hue
@@ -55,7 +56,8 @@ function update() {
         yTimeout = true;
         setTimeout(() => {
             yTimeout = false;
-        }, 250);
+            lastHit = '';
+        }, 1500);
         //flip y movement direction
         dirY *= -1;
         //change to random hue
