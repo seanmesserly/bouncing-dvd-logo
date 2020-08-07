@@ -16,6 +16,7 @@ body {
     width: 15vw;
     height: auto;
     -webkit-user-select: none;
+    transition: transform 17ms ease-in-out;
 }
 
 #nice {
